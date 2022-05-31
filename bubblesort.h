@@ -22,6 +22,13 @@ public:
         return to_string(re) + " + " + to_string(im) + "*i";
     }
 
+bool operator > (complex obj) {
+    if (this->modul() > obj.modul()) {
+        return 1;
+    } else return 0;
+
+    }
+
 };
 
 void bubblesort (int*, int);

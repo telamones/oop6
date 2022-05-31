@@ -38,7 +38,7 @@ void bubblesort (int* arr1, int n) {
 void bubblesort (complex* arr2, int m) {
     for (int i = 0; i < m; i++) {
         for (int j = 0; j < m-1; j++) {
-            if (arr2[j].modul() > arr2[j + 1].modul()) {
+            if (arr2[j] > arr2[j + 1]) {
                 complex a = arr2[j];
                 arr2[j] = arr2[j + 1];
                 arr2[j + 1] = a;
